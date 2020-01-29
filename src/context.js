@@ -80,6 +80,7 @@ class RoomProvider extends Component {
         breakfast, pets} = this.state;
         let tempRooms = [...rooms];
         capacity = parseInt(capacity, 10);
+        price = parseInt(price, 10);
 
         //filter by type
         if (type !== 'all'){
@@ -90,6 +91,9 @@ class RoomProvider extends Component {
         if (type !== 1){
             tempRooms = tempRooms.filter(room => room.capacity >= capacity)
         }
+
+        //filter by price
+        tempRooms = tempRooms.filter(room => room.price <= price);
 
         this.setState({
             sortedRooms: tempRooms
@@ -102,7 +106,7 @@ class RoomProvider extends Component {
                 ...this.state,
                 getRoom: this.getRoom,
                 handleChange: this.handleChange
-            }}>
+            }}> 
                 {this.props.children}
             </RoomContext.Provider>
         );

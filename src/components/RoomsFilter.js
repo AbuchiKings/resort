@@ -30,7 +30,8 @@ function RoomsFilter({ rooms }) {
         <section className="filter-container">
             <Title title="search rooms" />
             <form action="" className="filter-form">
-            {/* select by type */}
+
+                {/* select by type */}
                 <div className="form-group">
                     <label htmlFor="type">room type</label>
                     <select name="type" id="type" className="form-control"
@@ -47,6 +48,19 @@ function RoomsFilter({ rooms }) {
                         {numOfPeople}
                     </select>
                 </div>
+
+                {/* filter by price */}
+                <div className="form-group">
+                    <label htmlFor="price">
+                        room price ${price}
+                    </label>
+                    <input type="range" name="price" id="price" min={minPrixe}
+                        max={maxPrice} value={price} onChange={handleChange}
+                        className="form-control"
+                    />
+                </div>
+
+
             </form>
         </section>
     );
