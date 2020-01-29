@@ -1,8 +1,9 @@
 import React from 'react';
 import Room from './Room';
 
-function RoomsList({ rooms }) {
-    if (rooms.length === 0) {
+function RoomsList({ sortedRooms }) {
+    //  parameter used here is the sortedRooms
+    if (sortedRooms.length === 0) {
         return (
             <div className="empty-search">
                 <h3>Unfortunately, no rooms matched your search parameter</h3>
@@ -15,7 +16,7 @@ function RoomsList({ rooms }) {
         <section className="roomslist">
             <div className="roomslist-center">
                 {
-                    rooms.map((item) => {
+                    sortedRooms.map((item) => {
                         return <Room key={item.id} room={item} />;
                     })
                 }
