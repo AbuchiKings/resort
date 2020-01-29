@@ -60,6 +60,37 @@ function RoomsFilter({ rooms }) {
                     />
                 </div>
 
+                {/* filter by size */}
+                <div className="form-group">
+                    <label htmlFor="size">
+                        room size
+                    </label>
+                    <div className="size-inputs">
+
+                        <input type="number" name="minSize" id="size"
+                         className="size-input" value={minSize} onChange={handleChange}/>
+
+                        <input type="number" name="maxSize" id="size"
+                         className="size-input" value={maxSize} onChange={handleChange}/>
+                    </div>
+                </div>
+
+                {/* extras */}
+                <div className="form-group">
+                    <div className="single-extra">
+                        <input type="checkbox" name="breakfast" id="breakfast"
+                            className="" onChange={handleChange} checked={breakfast}
+                        />
+                        <label htmlFor="breakfast">breakfast</label>
+                    </div>
+                    <div className="single-extra">
+                        <input type="checkbox" name="pets" id="pets"
+                            className="" onChange={handleChange} checked={breakfast}
+                        />
+                        <label htmlFor="pets">pets</label>
+                    </div>
+                </div>
+
 
             </form>
         </section>
