@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import logo from '../images/logo.svg';
 import { FaAlignRight } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export default class Navbar extends Component {
     state = {
         isOpen: false
     };
+
+    activeStyle= {color: "#e2970d", borderBottom: "1px solid #e2970d"};
 
     handleToggle = () => {
         
@@ -19,7 +21,7 @@ export default class Navbar extends Component {
             <nav className="navbar">
                 <div className="nav-center">
                     <div className="nav-header">
-                        <Link to="/">
+                        <Link to="/" >
                             <img src={logo} alt="Beach resort" />
                         </Link>
 
@@ -30,10 +32,10 @@ export default class Navbar extends Component {
                     <ul className={this.state.isOpen ?
                         "nav-links show-nav" : "nav-links"}>
                         <li>
-                            <Link to="/">Home </Link>
+                            <NavLink to="/" activeStyle={this.activeStyle} exact>Home </NavLink>
                         </li>
                         <li>
-                            <Link to="/rooms">Rooms </Link>
+                            <NavLink to="/rooms" activeStyle={this.activeStyle}>Rooms </NavLink>
                         </li>
                     </ul>
                 </div>

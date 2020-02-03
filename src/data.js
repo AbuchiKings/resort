@@ -2,9 +2,6 @@ import room1 from "./images/details-1.jpeg";
 import room2 from "./images/details-2.jpeg";
 import room3 from "./images/details-3.jpeg";
 import room4 from "./images/details-4.jpeg";
-import room5 from "./images/details-5.jpg";
-import room6 from "./images/details-6.jpg";
-import room7 from "./images/details-7.jpeg";
 import room8 from "./images/details-8.jpg";
 import img1 from "./images/room-1.jpeg";
 import img2 from "./images/room-2.jpeg";
@@ -18,7 +15,6 @@ import img9 from "./images/room-9.jpeg";
 import img10 from "./images/room-10.jpeg";
 import img11 from "./images/room-11.jpeg";
 import img12 from "./images/room-12.jpeg";
-import img14 from "./images/room-14.jpeg";
 
 export default [
   {
@@ -763,62 +759,6 @@ export default [
     }
   },
 
-  {
-    sys: {
-      id: "14"
-    },
-    fields: {
-      name: "family deluxe-plus",
-      slug: "family-deluxe-plus",
-      type: "family",
-      price: 550,
-      size: 450,
-      capacity: 7,
-      pets: true,
-      breakfast: true,
-      featured: false,
-      description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
-      images: [
-        {
-          fields: {
-            file: {
-              url: img14
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room5
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room6
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room7
-            }
-          }
-        }
-      ]
-    }
-  },
+  
   
 ];

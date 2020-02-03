@@ -10,7 +10,7 @@ function getUnique(items, value) {
 
 function RoomsFilter({ rooms }) {
     const context = useContext(RoomContext);
-    const { type, capacity, price, minPrixe, maxPrice,
+    const { price, minPrixe, maxPrice,
         minSize, maxSize, breakfast, pets, handleChange } = context;
     //get unique room types
     let types = getUnique(rooms, 'type');
@@ -70,7 +70,7 @@ function RoomsFilter({ rooms }) {
                         <input type="number" name="minSize" id="size"
                          className="size-input" value={minSize} onChange={handleChange}/>
 
-                        <input type="number" name="maxSize" id="size"
+                        <input type="number" name="maxSize" id="size2"
                          className="size-input" value={maxSize} onChange={handleChange}/>
                     </div>
                 </div>

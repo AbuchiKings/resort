@@ -165,7 +165,7 @@ h6 {
   justify-content: center;
 }
 .roomsHero {
-  background-image: url("./images/details-9.jpg");
+  background-image: url("./images/roomsDefault.jpg");
   min-height: 60vh;
 }
 /* End of Hero */
