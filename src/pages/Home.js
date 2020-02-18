@@ -23,6 +23,7 @@ function Home() {
 }
 
 export default Home;
+//DialogFlow API or WIT.AI.
 
 Hero.defaultProps = {
     hero: "defaultHero"
